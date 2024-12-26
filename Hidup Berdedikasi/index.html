@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidup Berdedikasi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Button Styling */
+    .product-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .product-button {
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .product-button:hover {
+      background-color: #0056b3;
+    }
+
+    .product-description {
+      display: none;
+      margin-top: 15px;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('ddd.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Product Section */
+    .products {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .products .container {
+      text-align: center;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      font-size: 1.5rem;
+      margin: 15px 0;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact button {
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer .social-media a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    footer .social-media a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .product-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .product {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">HIDUP BERDEDIKASI</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Selamat datang Di Platform Hidup Berdedikasi</h2>
+      <p>Tingkatkan Kualitas Hidupmu Bersama Kami!</p>
+      <a href="#contact" class="cta-btn">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Produk Kami</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="aaa.jpg" alt="Produk 1">
+          <h3>BrainBoost - Money Magnet</h3>
+          <div class="product-buttons">
+            <button class="product-button" onclick="toggleDescription(1)">Deskripsi</button>
+            <button class="product-button" onclick="buyProduct(1)">Beli</button>
+          </div>
+          <div id="description-1" class="product-description">
+            <p>Ini adalah deskripsi lengkap untuk Produk 1. Produk ini sangat bermanfaat untuk ...</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="bbb.jpg" alt="Produk 2">
+          <h3>BrainBoost - Suka Baca Buku</h3>
+          <div class="product-buttons">
+            <button class="product-button" onclick="toggleDescription(2)">Deskripsi</button>
+            <button class="product-button" onclick="buyProduct(2)">Beli</button>
+          </div>
+          <div id="description-2" class="product-description">
+            <p>Ini adalah deskripsi lengkap untuk Produk 2. Produk ini sangat bermanfaat untuk ...</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="ccc.jpg" alt="Produk 3">
+          <h3>BrainBoost Relaxation Hilangkan Stress & Anxiety</h3>
+          <div class="product-buttons">
+            <button class="product-button" onclick="toggleDescription(3)">Deskripsi</button>
+            <button class="product-button" onclick="buyProduct(3)">Beli</button>
+          </div>
+          <div id="description-3" class="product-description">
+            <p>Ini adalah deskripsi lengkap untuk Produk 3. Produk ini sangat bermanfaat untuk ...</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="eee.jpg" alt="Produk 4">
+          <h3>BrainBoost Pede Public Speaking</h3>
+          <div class="product-buttons">
+            <button class="product-button" onclick="toggleDescription(4)">Deskripsi</button>
+            <button class="product-button" onclick="buyProduct(4)">Beli</button>
+          </div>
+          <div id="description-4" class="product-description">
+            <p>Ini adalah deskripsi lengkap untuk Produk 4. Produk ini sangat bermanfaat untuk ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak Kami</h2>
+      <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.facebook.com/yourpage" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/hidupberdedikasi?igsh=YnlpMGVnODV3aTVr" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Function to toggle product description
+    function toggleDescription(productId) {
+      var description = document.getElementById('description-' + productId);
+      description.style.display = (description.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Function to buy product
+    function buyProduct(productId) {
+      var productLinks = {
+        1: "https://tribeversity.com/course/detail/j1f1685f?affCode=6M29Q5", // Product 1 link
+        2: "https://tribeversity.com/course/detail/m81senxx?affCode=6M29Q5", // Product 2 link
+        3: "https://tribeversity.com/course/detail/tmxetbo9?affCode=6M29Q5", // Product 3 link
+        4: "https://tribeversity.com/course/detail/wgqv2h28?affCode=6M29Q5"  // Product 4 link
+      };
+
+      var link = productLinks[productId];
+      if (link) {
+        window.open(link, '_blank');
+      }
+    }
+
+    // Function to send message to WhatsApp
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      var text = "Halo, saya ingin menghubungi Anda melalui website Hidup Berdedikasi.%0A%0A" +
+                  "Nama: " + encodeURIComponent(name) + "%0A" +
+                  "Email: " + encodeURIComponent(email) + "%0A" +
+                  "Pesan: " + encodeURIComponent(message);
+
+      var phoneNumber = "628975017205"; // Replace with your WhatsApp number
+
+      var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + text;
+
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>
+<script>
+    // Fungsi untuk mengirim pesan ke WhatsApp
+    function sendToWhatsApp(event) {
+      event.preventDefault(); // Menghentikan pengiriman form standar
+
+      // Mengambil nilai dari input form
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Membuat pesan yang akan dikirim
+      var text = "Halo, saya ingin menghubungi Anda melalui website Hidup Berdedikasi.%0A%0A" +
+                  "Nama: " + encodeURIComponent(name) + "%0A" +
+                  "Email: " + encodeURIComponent(email) + "%0A" +
+                  "Pesan: " + encodeURIComponent(message);
+
+      // Nomor WhatsApp yang akan dikirimi pesan
+      var phoneNumber = "628975017205"; // Ganti dengan nomor WhatsApp Anda
+
+      // URL WhatsApp dengan parameter pesan
+      var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + text;
+
+      // Membuka WhatsApp dengan pesan
+      window.open(whatsappURL, '_blank');
+    }
+</script>
